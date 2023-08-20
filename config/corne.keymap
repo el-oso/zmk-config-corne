@@ -16,12 +16,14 @@
         bkt: brackets {
             compatible = "zmk, behavior-tap-dance";
             label = "Brackets";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
         brc: braces {
             compatible = "zmk, behavior-tap-dance";
             label = "Braces";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
