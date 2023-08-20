@@ -11,6 +11,24 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+
+    behaviors {
+        bkt: brackets {
+            compatible = "zmk, behavior-tap-dance";
+            label = "Brackets";
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&kb RBKT>;
+        };
+        brc: braces {
+            compatible = "zmk, behavior-tap-dance";
+            label = "Braces";
+            tapping-term-ms = <200>;
+            bindings = <&kp LBRC>, <&kb RBRC>;
+        };
+    };
+
+
+
     macros {
     };
 
@@ -29,7 +47,7 @@
   &kp ESC        &kp Q  &kp W      &kp E  &kp R      &kp T      &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
   &mt LCTRL TAB  &kp A  &kp S      &kp D  &kp F      &kp G      &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp RET
   &kp LSHFT      &kp Z  &kp X      &kp C  &kp V      &kp B      &kp N  &kp M      &kp COMMA  &kp DOT  &kp SLASH &kp RSHIFT
-                         &kp LALT  &mo 1  &kp SPACE   &kp SPACE  &mo 2   &lt 4 LBKT
+                         &kp LALT  &mo 1  &kp SPACE   &kp SPACE  &mo 2   &bkt
             >;
         };
  
@@ -45,7 +63,7 @@
 &trans &kp EXCL     &kp AT       &kp HASH     &kp DLLR      &kp PRCNT     &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR &kp TILDE
 &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_SEL 4  &kp DQT    &kp MINUS &kp EQUAL        &kp UNDER &kp COLON &kp RET2
 &trans &trans       &trans       &trans       &trans        &trans        &kp SQT    &kp PLUS  &kp LT           &kp GT    &kp QMARK &kp PIPE
-                                   &kp LGUI     &trans  &kp SPACE    &mo 3   &trans  &kp RBRC
+                                   &kp LGUI     &trans  &kp SPACE    &mo 3   &trans  &brc
             >;
         };
 
