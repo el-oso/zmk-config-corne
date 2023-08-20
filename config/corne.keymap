@@ -17,13 +17,13 @@
             compatible = "zmk, behavior-tap-dance";
             label = "Brackets";
             tapping-term-ms = <200>;
-            bindings = <&kp LBKT>, <&kb RBKT>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
         };
         brc: braces {
             compatible = "zmk, behavior-tap-dance";
             label = "Braces";
             tapping-term-ms = <200>;
-            bindings = <&kp LBRC>, <&kb RBRC>;
+            bindings = <&kp LBRC>, <&kp RBRC>;
         };
     };
 
@@ -56,7 +56,7 @@
             // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | ~ |
             // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |  "  |  -  |  =  |  _  |  :  |   |
             // | SHFT |     |     |     |     |     |   |  '  |  +  |  <  |  >  |  ?  | | |
-            //                    | GUI |     | SPC |   | ENT |  L3 |  { |
+            //                     | GUI |     | SPC |   | ENT |  L3 |  { |
 
             label = "Raise";
             bindings = <
