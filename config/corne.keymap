@@ -99,8 +99,8 @@
             label = "Extra";
             bindings = <
  &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL
- &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
- &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+ &trans &trans &trans &trans &trans &trans &trans &trans LBRC   RBRC   &trans &trans
+ &trans &trans &trans &trans &trans &trans &trans &trans LBKT   RBKT   &trans &trans
               &trans      &trans  &trans         &trans    &trans   &trans
             >;
         };
