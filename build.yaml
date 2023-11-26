@@ -14,11 +14,11 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: corne_low_left nice_view_adapter nice_view
+    shield: cornelow_left nice_view_adapter nice_view
   - board: nice_nano_v2
-    shield: corne_low_right nice_view_adapter nice_view
+    shield: cornelow_right nice_view_adapter nice_view
 
   - board: nice_nano_v2
-    shield: corne_cirth_left nice_view_adapter nice_view
+    shield: cornecirth_left nice_view_adapter nice_view
   - board: nice_nano_v2
-    shield: corne_cirth_right nice_view_adapter nice_view
+    shield: cornecirth_right nice_view_adapter nice_view
